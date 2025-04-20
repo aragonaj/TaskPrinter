@@ -102,7 +102,12 @@
 
 #### 6. El usuario puede exportar la lista de tareas mediante el export.service
 
-## Patrones de diseño
+## Fuentes
+
+- Obtención de datos de un formulario en Angular: https://www.youtube.com/watch?v=YhmdLiX1RE8
+- Validar que los campos cumplan los requisitos: https://www.youtube.com/watch?v=U1zcI4JqNpw
+
+> #### Patrones de diseño
 
 - https://refactoring.guru/design-patterns/catalog
 

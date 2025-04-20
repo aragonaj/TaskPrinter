@@ -1,1 +1,35 @@
 <h2>Este es el task-input</h2>
+
+<form [formGroup]="form" class="task-form" (submit)="handleSubmit()">
+    <fieldset>
+        <!-- título/ nombre de la tarea -->
+        <input class="task-title" 
+            type="text" 
+            placeholder="nombre de la tarea" 
+            formControlName="title">
+
+        <!-- fechas/ plazos -->
+        <input class="task-date" 
+            type="date" 
+            formControlName="date">
+
+        <!-- prioridad -->
+        <div *ngFor="let p of priorities">
+            <label>
+                <input type="radio" 
+                    [value]="p.value" 
+                    formControlName="priority">
+                {{ p.value }}
+            </label>
+        </div>
+          
+        <!-- comentarios/ notas -->
+        <textarea class="task-message" 
+            name="message" 
+            rows="10" 
+            cols="30" 
+            placeholder="Comentarios sobre la tarea..." 
+            formControlName="message"></textarea>
+        <button class="submit" type="submit">CREAR TAREA</button>
+    </fieldset>
+</form>
